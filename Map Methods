@@ -5,3 +5,20 @@ console.log(name)
 //output
 
 [ 'raja', 'vinsion', 'viswa' ]
+
+
+let b = [1, 2, 3, 4]
+b.map(num=>console.log(num))  
+
+//output
+1
+2
+3
+4
+
+let b = [1, 2, 3, 4]
+let c = b.map(d => d)
+console.log(c)
+
+//output
+[ 1, 2, 3, 4 ]
