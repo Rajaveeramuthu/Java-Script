@@ -1,0 +1,14 @@
+ var a = 10;
+ var a = 20;
+ console.log(a)
+
+
+
+ let a = 10; // it can't do redeclaration
+ let b=20;
+ console.log(b);
+
+
+const a = 20; //it can't do redclaration and initialization
+const b = 10;
+console.log(a)
