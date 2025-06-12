@@ -1,0 +1,56 @@
+// Primitive
+let x = 10;
+let y = x;
+x = 20;
+console.log(x);
+
+// Non-Primitive
+let a = { name: "Raj", age: 25 };
+let b = a;
+a.name = "Veera";
+console.log(a, a.age);
+
+
+
+//primitive data types are 
+
+
+console.log(typeof "hello") //string
+console.log(typeof 25);  //number
+console.log(typeof true) //boolean
+
+let c
+console.log(typeof c) //undefine
+
+console.log(typeof a)//object
+
+let d = ["1", "2"]
+console.log(typeof d) //object
+
+let e=2426373892099n;
+console.log(typeof e)
+
+let g=( " ")
+console.log(typeof g)
+
+// let secret = Symbol(13256);
+
+// let toyBox = {
+//   [secret]: "This is a hidden toy "
+// };
+
+// console.log(toyBox[secret]);
+
+let num =Symbol(250925009);
+let secret = {[num]:"this is secrate"}
+console.log(secret[num]);   //it's for Symbol data types and it's output is this is secrate
+
+
+let secretKey = Symbol("secret");
+
+let person = {
+  name: "Raj",
+  [secretKey]: "Hidden Info"
+};
+
+console.log(person[secretKey] , person.name);   //output is Hidden Info Raj
