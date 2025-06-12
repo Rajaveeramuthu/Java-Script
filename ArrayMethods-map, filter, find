@@ -1,0 +1,35 @@
+let products = [
+    {
+        product: "Electronics",
+        Sub_product: "tv",
+        prize: 1800
+    }, {
+        product: "Electronics",
+        Sub_product: "laptop",
+        prize: 1200
+    }, {
+        product: "Electronics",
+        Sub_product: "fan",
+        prize: 2000
+    },
+    {
+        product: "Furniture",
+        Sub_product: "cot",
+        prize: 2000
+    },
+    {
+        product: "Furniture",
+        Sub_product: "chair",
+        prize: 2000
+    },
+]
+
+
+let a = products.filter(b => b.product === "Electronics" && b.prize > 1500).map(b=>b.Sub_product)
+console.log(a)
+
+// let c=products.map(items=>items.product || items.Sub_product)
+// console.log(c);
+
+// let Find=products.find(f=>f.product==="Electronics")
+// console.log(Find)
