@@ -1,0 +1,66 @@
+let a = 10;
+let b = 20;
+
+//arithmetic operators
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+
+
+//assignment operators
+
+b += 10;
+console.log(b);
+
+a -= 5;
+console.log(a);
+
+a *= 5;
+console.log(a)
+
+a /= 2;
+console.log(a)
+
+
+//comparison operators
+
+console.log(a == b);
+console.log(a != b);
+console.log(a === b);
+console.log(a !== b);
+console.log(a > b);
+console.log(a < b);
+console.log(a <= b);
+console.log(a >= b);
+
+
+//logical operators
+
+let c = 10;
+let d = 30
+console.log(c < d && d > c) //and
+
+console.log(c > d || d > c) //or
+
+console.log(!c < d) //not
+
+
+c--
+
+console.log(c)
+
+
+
+//ternary operators
+
+let mark = 50;
+let person = mark > 45 ? "pass" : "fail"
+console.log("raja" + " ", person)
+
+
+
+let ticketavailable = 10;
+let ticket = ticketavailable > 10 ? "ticket is available for booking" : "not available"
+console.log(ticket)
