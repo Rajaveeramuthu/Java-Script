@@ -1,0 +1,6 @@
+let arr = [{ name: "raja", mark: 45 }, { name: "vinsion", mark: 50 }, { name: "viswa", mark: 80 }]
+let person = arr.filter(a => a.mark > 50)
+console.log(person)
+
+//output
+[ { name: 'viswa', mark: 80 } ]
