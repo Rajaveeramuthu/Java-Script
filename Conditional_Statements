@@ -1,0 +1,84 @@
+//if-else
+
+let age = 20;
+
+if(age>18){
+    console.log("eligible");
+}
+else{
+    console.log("not eligible")
+}
+
+let marks = 40;
+
+if (marks >= 50) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+
+
+//if-else-if
+
+let mark =35;
+
+if(mark>35){
+    console.log("pass")
+}
+else if(mark==35){
+    console.log("just pass")
+}
+
+else{
+    console.log("fail")
+}
+
+
+let score = 85;
+
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 75) {
+  console.log("Grade B");
+} else if (score >= 50) {
+  console.log("Grade C");
+} else {
+  console.log("Fail");
+}
+
+
+
+//switch
+
+
+let day="friday"
+
+switch(day){
+    case "sunday":
+        console.log("it is sunday");
+        break;
+    case "tuesday":
+        console.log("it is tuesday");
+        break;
+    case "friday":
+        console.log("it is friday")
+        break;
+}
+
+
+
+let movie = "vida muyarchi"
+
+switch(movie){
+    case "kaththi":
+        console.log("it showing in 1st screen");
+        break;
+    case "thuppaki":
+        console.log("screen 2")
+        break;
+    case "leo":
+        console.log("3rd screen")
+        break
+    default:
+        console.log("movie is not running")
+}
