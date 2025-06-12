@@ -1,0 +1,7 @@
+let arr=["raja","vinsion","viswa"]
+let name=arr.map(a=>a)
+console.log(name)
+
+//output
+
+[ 'raja', 'vinsion', 'viswa' ]
