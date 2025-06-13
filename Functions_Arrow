@@ -1,0 +1,32 @@
+const add=(a,b)=>{
+    console.log(a+b);
+    console.log(a*b)
+}
+add(5,3)
+
+
+const string=(str)=>{
+    let revers=" "
+    for(let i=str.length-1;i>=0;i--){
+        // console.log(str[i])
+        revers +=str[i];
+    }
+    console.log(revers)
+}
+string("raja")
+
+
+const day=(dailyday)=>{
+    switch (dailyday){
+        case "sunday":
+            console.log("1st day")
+            break;
+        case "monday":
+            console.log("2nd day")
+            break;
+        
+        default:
+            console.log("invalid")
+    }
+}
+day("monday")
