@@ -1,0 +1,54 @@
+async function getPizza() {
+  console.log("Ordering pizza...");
+  await new Promise(resolve => setTimeout(resolve, 2000)); 
+  console.log("Pizza delivered!");
+}
+getPizza();
+
+
+
+async function example() {
+    console.log("start....")
+    let respose=await fetch("https://www.mockachino.com/54b97586-6585-46/example")
+    let data=await respose.json();
+    console.log(data)
+}
+example();
+
+
+
+const raja=async()=>{
+    let a=await fetch("https://www.mockachino.com/54b97586-6585-46/example")
+    let b=await a.json();
+    console.log(b)
+}
+
+raja();
+
+
+
+const products = async () => {
+    let pro = await fetch("https://www.mockachino.com/54b97586-6585-46/users")
+    let mass = await pro.json()
+    // console.log(mass)
+    // let d = mass.categories.filter(p => p.Category === "Electromics")/
+    console.log(mass)
+}
+
+products()
+
+
+async function fetch() {
+    try {
+        const a = await fetch("https://www.mockachino.com/54b97586-6585-46/users");
+        const data = await a.json();
+
+        const filter = data.categories.filter(item => item.Category === "Electronics" || item.Category === "Furniture");
+
+        console.log(filter);
+    } catch (error) {
+        console.error("Error", error);
+    }
+}
+
+fetch();
