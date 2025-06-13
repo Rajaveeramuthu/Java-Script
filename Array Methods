@@ -1,0 +1,79 @@
+// let fruits = ["apple", "banana", "mango"];
+// fruits.splice(2, 1, "grape");
+// console.log(fruits); 
+
+
+
+
+let name = ['raja', 'vinsion', 'prasanth', 'viswa']
+// name.splice(2, 1, "master");
+// let sliced=name.slice(0,3)
+// console.log(name)
+// console.log(sliced).
+
+
+// name.forEach((num) => {
+//     console.log(num)
+// });
+
+
+// name.forEach(element => {
+//     console.log(element)
+
+// });
+
+
+// name.map(num=>console.log(num))
+
+// let a = name.map(num => num)
+// console.log(a)
+
+let number = [1, 2, 3, 4, 5]
+// number.map(num => { console.log(num % 2 == 0) })
+// let a = number.filter(num => num % 2 == 0)
+// console.log(a)
+
+
+//find
+// number.find(num=>{console.log(num==3)})
+// let b=number.find(num=>num==3)
+// console.log(b)
+
+
+//includes()
+
+// let include=number.includes(3)
+// console.log(include)
+
+
+//splice()
+
+// let splice=number.splice(1,3, 7,9)
+// console.log(number)
+
+
+//slice();
+
+
+// let sliced = number.slice(1, 3);
+// console.log(sliced); 
+
+//push
+
+let push=number.push(7)
+console.log(number)
+
+
+//pop
+
+number.pop(7)
+console.log(number)
+
+
+//reduce
+
+let a=number.reduce((sum,value)=>{
+    return sum+value
+},0)
+
+console.log(a)
