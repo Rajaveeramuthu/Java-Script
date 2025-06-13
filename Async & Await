@@ -52,3 +52,18 @@ async function fetch() {
 }
 
 fetch();
+
+
+async function practiceFetch () {
+    try{
+        const mapla=await fetch("https://www.mockachino.com/54b97586-6585-46/users");
+        const d=await mapla.json();
+        const mm=d.categories.filter(i=>i.SubCategory=="Cot");
+        console.log(mm);
+    }
+    catch(err){
+        console.log("Error",err)     
+    } 
+}
+practiceFetch()
+
