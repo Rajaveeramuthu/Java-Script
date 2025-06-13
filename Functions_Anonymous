@@ -1,0 +1,12 @@
+const person=function(name){
+    console.log("hello"+" "+name)
+}
+person("raja")
+
+
+
+const number=function(a,b){
+    console.log( a+b)
+}
+
+number(10,20)
