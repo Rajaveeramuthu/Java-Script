@@ -1,0 +1,110 @@
+let a = { name: "raja", age: 20 }
+console.log(Object.keys(a))
+
+
+let obj = { name: "raja", age: 20, mark: 26 }
+console.log(Object.keys(obj))
+
+
+//merge to object and take the keys into the objects
+let name = { name: "raja", age: 20 }
+let mark = { mark: 50, rank: 2 }
+let b = { ...name, ...mark }
+console.log(Object.keys(b))
+
+
+//Objectvalues
+
+let keys = { name: "raja", age: 20 }
+console.log(Object.values(keys))
+
+//merge to object and take the values
+
+let obj1 = { name: "raja", age: 20 }
+let obj2 = { mark: 50, rank: 2 }
+let values = { ...obj1, ...obj2 }
+console.log(Object.values(values))
+
+
+//Object Entries
+
+let raj = { name: "raja", age: 20 }
+console.log(Object.entries(raj))
+
+let raja = { name: "raja", age: 20 }
+let rani = { mark: 50, rank: 2 }
+// let entry = { ...raja, ...rani } //methode 1
+entry=Object.assign(raja,rani) //methode 2
+console.log(Object.entries(entry))
+
+
+//object assign
+
+let master={ name: "raja", age: 20 }
+let classs={ mark: 50, rank: 2 }
+let assign=Object.assign(master,classs)
+console.log(assign)
+
+
+//onbjectFrezz
+
+let frezeeobj={ name: "raja", age: 20 }
+Object.freeze(frezeeobj)
+frezeeobj.name="rani"
+console.log(frezeeobj)
+
+
+//Object.hasOwnproperty
+
+
+let user={ name: "raja", age: 20 }
+console.log(user.hasOwnProperty("age","name"))
+
+
+//Object.getOwnPropertyNames()
+
+const mass = {
+  name: "raja",
+  age: 20
+};
+
+console.log(Object.getOwnPropertyNames(user)); 
+
+
+const mass1 = {
+  name: "raja",
+  age: 20
+};
+
+Object.defineProperty(mass1,"hidden",{
+    value:20,
+    enumerable: false
+})
+
+console.log(Object.getOwnPropertyNames(mass1))
+
+
+//create
+
+let summa=Object.create({age:20})
+console.log(summa.age)
+
+//defineProperty
+
+let what = {};
+Object.defineProperty(what, "a", { value: 10 });
+console.log(what.a);
+
+let when = {};
+Object.defineProperties(when, {
+  a: { value: 1 },
+  b: { value: 2 }
+});
+
+console.log(when.a,when.b)
+
+
+//getPrototypeOf()
+
+let yar = {name:"raja"};
+console.log(Object.getPrototypeOf(yar) === Object.prototype); 
