@@ -1,0 +1,92 @@
+const raja = new Promise((resolve, reject) => {
+    let isDone = true;
+
+    if (isDone) {
+        resolve("task completed");
+    }
+    else {
+        reject("is not completed")
+    }
+
+})
+raja.then(result => console.log(result))
+    .catch(error => console.log(error));
+
+
+let p1 = Promise.resolve("raja");
+let p2 = Promise.resolve("vinsion");
+let p3 = Promise.reject("prasanth");
+
+Promise.all([p1, p2, p3])
+    .then(result => {
+        console.log("All items: ", result);
+    }).catch((err) =>
+        console.log("err", err))
+
+
+Promise.allSettled([p1, p2, p3])
+    .then(result => {
+        console.log("AllSettled : ", result);
+    });
+
+Promise.race([p1, p2, p3])
+    .then(result => {
+        console.log("race: ", result);
+    });
+
+
+Promise.any([p1, p2, p3])
+    .then(result => {
+        console.log("any: ", result);
+    });
+
+
+
+function example() {
+    return new Promise((resolve, reject) => {
+        let isWorkDone = true
+
+        if (isWorkDone) {
+            resolve("work is done")
+        }
+        else {
+            reject("is not done")
+        }
+    })
+}
+
+async function child() {
+    try {
+        const res = await example();
+        console.log(res)
+    }
+    catch (err) {
+        console.log("error", err)
+    }
+}
+child();
+
+
+const rvm = (user) => {
+    return new Promise((resolve,reject)=>{
+        if(user=="admin"){
+            resolve ("success")
+        }
+        else{
+            reject("terminated")
+        }
+    })
+}
+
+
+const things=async()=>{
+    try{
+        let respose=await rvm("admin");
+        console.log(respose)
+    }
+    catch(err){
+        console.log("error",err)
+    }
+}
+
+things()
