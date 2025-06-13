@@ -1,0 +1,33 @@
+function name(person){
+    return "hello"+" "+ person;
+}
+console.log(name("raja"));
+
+
+function add(a,b){
+    console.log(a+b);
+}
+let a =add(10,20)
+
+
+function Available(ticket){
+    if(ticket>10){
+        console.log("is not available")
+    }
+    else{
+        console.log("ticket is available")
+    }
+}
+
+let b=Available(11)
+
+
+
+
+function String(num){
+    for(let i=num.length-1;i>=0;i--){
+        console.log(num[i])
+    }
+}
+
+String("raja")
